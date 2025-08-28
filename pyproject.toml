@@ -17,7 +17,9 @@ dependencies = [
     "pytest (>=8.4.1,<9.0.0)",
     "pytest-asyncio (>=0.25.0,<0.26.0)",
     "alembic (>=1.16.4,<2.0.0)",
-    "pydantic (>=2.10.5,<3.0.0)"
+    "pydantic (>=2.10.5,<3.0.0)",
+    "aiosqlite (>=0.21.0,<0.22.0)",
+    "greenlet (>=3.2.4,<4.0.0)"
 ]
 
 [tool.poe.tasks]
@@ -31,8 +33,8 @@ export-requirements = "poetry export -f requirements.txt --output requirements.t
 
 [project.optional-dependencies]
 dev = [
-    "ruff (>=0.8.9,<0.9.0)",
-    "pre-commit (>=4.0.1,<5.0.0)"
+    "ruff>=0.0.297",
+    "pre-commit>=4.0.1"
 ]
 
 
